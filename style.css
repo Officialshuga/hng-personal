@@ -38,10 +38,16 @@ h1, h2 {
 ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 ul li {
     margin: 5px 0;
+}
+a{
+    color: black;
+    margin: auto 10px;
 }
 
 img {
@@ -49,9 +55,17 @@ img {
     margin: 10px auto;
 }
 
+
+@media (max-width: 400px){
+    header, section, footer {
+        padding: 10px;
+        max-width: 94%;
+    }
+}
 @media (max-width: 600px) {
     header, section, footer {
         padding: 10px;
+        width: 100%;
     }
 
     img {
